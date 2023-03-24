@@ -40,7 +40,7 @@ def home():
 
     container = socket.gethostname()
 
-    return render_template(index.html, context = context, container=container)
+    return render_template('index.html', context = context, container=container)
 
 if __name__ == "__main__":
     app.run(debug=True)
